@@ -1,0 +1,23 @@
+{
+  "name": "Nuxt",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "mikestead.dotenv",
+        "nuxt.mdc",
+        "nuxtr.nuxtr-vscode",
+        "vue.volar"
+      ]
+    }
+  }
+}
