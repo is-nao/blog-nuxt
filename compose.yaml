@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace:cached
+    ports:
+      - 3000:3000
+      - 4000:4000
+    tty: true
+    environment:
+      TZ: Asia/Tokyo

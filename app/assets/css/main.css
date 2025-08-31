@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../../content";
+
+@theme static {
+  --font-sans: "Public Sans", san-selif;
+}
+/*
+:root {
+  --ui-header-height: --spacing(16);
+  --ui-container: var(--container-7xl);
+}
+*/
+
+[style*="--vt-name"] {
+  view-transition-name: var(--vt-name);
+  contain: layout;
+}
