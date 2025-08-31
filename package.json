@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.2.9",
-    "@iconify-json/lucide": "^1.2.65",
-    "@iconify-json/simple-icons": "^1.2.49",
+    "@iconify-json/lucide": "^1.2.66",
+    "@iconify-json/simple-icons": "^1.2.50",
     "@iconify-json/vscode-icons": "^1.2.30",
     "@nuxt/eslint-config": "^1.9.0",
     "eslint": "^9.34.0",
