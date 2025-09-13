@@ -59,7 +59,7 @@ useSeoMeta({
       </UPageBody>
 
       <template v-if="page.body.toc?.links.length" #right>
-        <UContentToc :links="page.body.toc.links" highlight :ui="{ container: 'border-solid' }" />
+        <UContentToc title="目次" :links="page.body.toc.links" highlight :ui="{ container: 'border-solid' }" />
       </template>
     </UPage>
   </UContainer>
