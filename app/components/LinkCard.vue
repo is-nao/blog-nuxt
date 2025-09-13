@@ -14,7 +14,7 @@ const target = computed(() => props.href.startsWith('http') ? '_blank' : props.t
 
 const { data: result } = await useFetch('/api/ogp', {
   method: 'get',
-  query: { url: url.value }
+  query: { url: props.href }
 })
 </script>
 

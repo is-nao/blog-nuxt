@@ -77,7 +77,7 @@ export const logo = {
   psm1: 'i-vscode-icons-file-type-powershell',
   powershell: 'i-vscode-icons-file-type-powershell',
   terminal: 'i-lucide-terminal',
-  sh: 'i-simple-icons-gnometerminal',
+  sh: 'i-lucide-terminal',
   bash: 'i-simple-icons-gnubash',
   zsh: 'i-simple-icons-zsh',
   env: 'i-vscode-icons-file-type-dotenv',

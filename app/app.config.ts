@@ -30,11 +30,6 @@ export default defineAppConfig({
     icons: ui,
     prose: {
       codeIcon: logo,
-      a: {
-        slots: {
-          externalIcon: 'shrink-0 size-2.5 ml-0.5 align-text-top',
-        }
-      },
       pre: {
         variants: {
           mermaid: {
