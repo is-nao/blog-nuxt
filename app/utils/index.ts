@@ -49,16 +49,22 @@ export const serializeParams = (
 
 /**
  * アイコンを検索する
+ * 1. 全文ファイル名
+ * 2. ファイル名
+ * 3．拡張子
+ * 4. fallback関数
  * @param key キー
- * @returns アイコン名 | 空文字
+ * @param fallback ファイル拡張子を受け取るコールバック関数
+ * @returns アイコン名 | undefined
  */
-export const findIcon = (key: string) => {
+export const findIcon = (key: string, fallback?: (extension?: string) => string) => {
   const appConfig = useAppConfig()
   const icons: Record<string, string> = defu(appConfig.ui.prose.codeIcon, codeIcon)
-  const name = key.toLowerCase().replace(/\s*\(.*\)\s*$/, '').split('/').pop()
-  const extension = name?.split('.').pop()
+  const fullname = key.toLowerCase().replace(/\s*\(.*\)\s*$/, '')
+  const filename = fullname.split('/').pop()
+  const extension = filename?.split('.').pop()
 
-  return (name && icons[name]) ?? (extension && icons[extension]) ?? ''
+  return icons[fullname] ?? (filename && icons[filename]) ?? (extension && icons[extension]) ?? (fallback && fallback(extension))
 }
 
 export const durationFrom = (from: Date, to: Date = new Date()) => {
