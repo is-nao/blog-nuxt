@@ -55,7 +55,7 @@ useSeoMeta({
 
     <UMarquee
       v-for="(tagChunk, index) in tagChunks" :key="index"
-      pause-on-hover :reverse="index % 2 === 0" :overlay="true"
+      pause-on-hover :reverse="index % 2 === 0" :overlay="true" :repeat="10"
       :ui="{root: '[--gap:--spacing(1)] [--duration:30s] before:w-1/10 after:w-1/10', content: 'w-auto my-1'}"
     >
       <ArticleTag v-for="tag in tagChunk" :key="tag.value" :tag size="md" hover />
