@@ -70,6 +70,8 @@ export const logo = {
   yml: 'i-simple-icons-yaml',
   md: 'i-simple-icons-markdown',
   markdown: 'i-simple-icons-markdown',
+  mdc: 'i-simple-icons-markdown',
+  mdx: 'i-simple-icons-mdx',
   py: 'i-logos-python',
   python: 'i-logos-python',
   ps1: 'i-vscode-icons-file-type-powershell',
