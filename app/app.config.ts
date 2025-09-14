@@ -15,7 +15,7 @@ export default defineAppConfig({
       {
         label: 'X',
         tooltip: 'Open on X',
-        to: 'https://x.com/cookie_nao27',
+        to: 'https://x.com/_is_nao',
         icon: 'i-simple-icons-x',
       },
     ],
