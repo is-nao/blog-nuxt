@@ -1,5 +1,5 @@
 import type { ArticleQueryParams, TagQueryParams } from '~/types/article'
-import codeIcon from '#build/ui/prose/code-icon'
+import codeIconBase from '#build/ui/prose/code-icon'
 import { defu } from 'defu'
 
 /**
@@ -59,7 +59,7 @@ export const serializeParams = (
  */
 export const findIcon = (key: string, fallback?: (extension?: string) => string) => {
   const appConfig = useAppConfig()
-  const icons: Record<string, string> = defu(appConfig.ui.prose.codeIcon, codeIcon)
+  const icons: Record<string, string> = defu(appConfig.ui.prose.codeIcon, codeIconBase)
   const fullname = key.toLowerCase().replace(/\s*\(.*\)\s*$/, '')
   const filename = fullname.split('/').pop()
   const extension = filename?.split('.').pop()
