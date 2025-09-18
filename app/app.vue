@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { TooltipProps } from '@nuxt/ui'
 import { ja } from '@nuxt/ui/locale'
+import ja_ex from '~/utils/locales/ja'
 
+const locale = extendLocale(ja, ja_ex)
 const appconfig = useAppConfig()
 const x = appconfig.header.links.find(link => link.label === 'X')
 
@@ -28,7 +30,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp :locale="ja">
+  <UApp :locale>
     <NuxtLoadingIndicator />
 
     <ClientOnly>

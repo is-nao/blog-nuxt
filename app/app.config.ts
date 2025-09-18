@@ -1,5 +1,5 @@
-import { logo, ui } from './constants/icon'
-import * as component from './utils/tv'
+import * as component from './utils/component'
+import { icons, prose } from './utils/ui'
 
 export default defineAppConfig({
   title: 'Nuxt Blog',
@@ -27,19 +27,8 @@ export default defineAppConfig({
     colors: {
       primary: 'teal',
     },
-    icons: ui,
-    prose: {
-      codeIcon: logo,
-      pre: {
-        variants: {
-          mermaid: {
-            true: {
-              base: 'mermaid',
-            },
-          },
-        },
-      },
-    },
+    icons,
+    prose,
   },
   component,
 })
