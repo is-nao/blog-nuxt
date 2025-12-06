@@ -12,38 +12,38 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/content": "^3.8.2",
-    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/content": "^3.9.0",
+    "@nuxt/eslint": "^1.11.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/kit": "^4.2.1",
     "@nuxt/scripts": "0.13.0",
     "@nuxt/ui": "4.2.1",
-    "@nuxthub/core": "^0.9.0",
+    "@nuxthub/core": "^0.9.1",
     "@tailwindcss/vite": "^4.1.17",
     "@unhead/vue": "^2.0.19",
     "@vueuse/core": "^14.1.0",
     "@vueuse/nuxt": "^14.1.0",
-    "better-sqlite3": "^12.4.6",
+    "better-sqlite3": "^12.5.0",
     "cheerio": "^1.1.2",
     "defu": "^6.1.4",
-    "mermaid": "^11.12.1",
+    "mermaid": "^11.12.2",
     "nuxt": "^4.2.1",
-    "reka-ui": "^2.6.0",
+    "reka-ui": "^2.6.1",
     "tailwind-variants": "^3.2.2",
     "tailwindcss": "^4.1.17",
     "vue": "^3.5.25"
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/lucide": "^1.2.75",
-    "@iconify-json/simple-icons": "^1.2.60",
-    "@iconify-json/vscode-icons": "^1.2.36",
-    "@nuxt/eslint-config": "^1.10.0",
-    "@nuxt/test-utils": "^3.20.1",
+    "@iconify-json/lucide": "^1.2.79",
+    "@iconify-json/simple-icons": "^1.2.61",
+    "@iconify-json/vscode-icons": "^1.2.37",
+    "@nuxt/eslint-config": "^1.11.0",
+    "@nuxt/test-utils": "^3.21.0",
     "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
-    "vue-tsc": "^3.1.5",
-    "wrangler": "4.50.0"
+    "prettier": "^3.7.4",
+    "vue-tsc": "^3.1.6",
+    "wrangler": "4.53.0"
   },
-  "packageManager": "pnpm@10.23.0"
+  "packageManager": "pnpm@10.24.0"
 }
